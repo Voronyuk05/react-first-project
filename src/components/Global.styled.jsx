@@ -106,6 +106,12 @@ export const LinkUnderline = styled(Link)`
         background-color: #8963A7;
         transition: 0.2s;
     }
+
+    @media screen and (max-width: 576px) {
+        &::before {
+        height: 0.4vw;
+        }
+    }
 `
 
 export const PrimaryButton = styled.button`
