@@ -1,16 +1,30 @@
+import { MainPage } from "./MainPage/MainPage"
+import { AboutUsPage } from "./AboutUsPage/AboutUsPage"
+import { useState } from "react"
+
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+  const [page, setPage] = useState('Main')
+
+  function handleChangePage(page) {
+    setPage(page)
+  }
+
+  if (page === 'Main') {
+    return (
+      <>
+        <MainPage changePage={handleChangePage} />
+      </>
+    )
+  } else if (page === 'AboutUs') {
+    return (
+      <>
+        <AboutUsPage changePage={handleChangePage}/>
+      </>
+    )
+  } else {
+    return (
+      <h1>Error</h1>
+    )
+  }
+}
