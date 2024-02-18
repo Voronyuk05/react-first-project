@@ -17,5 +17,11 @@ export const List = styled.ul`
         gap: 10vw;
     }
 
+    @media screen and (max-width: 380px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15vw;
+    }
+
 `
 

@@ -16,4 +16,7 @@ export const List = styled.ul`
     @media screen and (max-width: 576px) {
         width: 95vw;
     }
+    @media screen and (max-width: 380px) {
+        flex-direction: column;
+    }
 `

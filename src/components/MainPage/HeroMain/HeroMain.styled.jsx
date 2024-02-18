@@ -14,6 +14,10 @@ export const Hero = styled.section`
     @media screen and (max-width: 576px) {
         height: 90vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 170vw;
+    }
 `
 
 export const HeroContainer = styled.div`
@@ -47,6 +51,7 @@ export const WrapperText = styled.div`
         width: 90vw;
         gap: 2.4vw;
     }
+
 `
 export const WrpapperImg = styled.div`
     width: 34.3vw;
@@ -57,6 +62,10 @@ export const WrpapperImg = styled.div`
 
     @media screen and (max-width: 576px) {
         width: 70vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
     }
 `
 
@@ -71,6 +80,14 @@ export const Info = styled.div`
     @media screen and (max-width: 992px) {
         justify-content: center;
     }
+
+    @media screen and (max-width: 380px) {
+        flex-wrap: wrap;
+        gap: 3vw;
+        h4 {
+            font-size: 4.5vw;
+        }
+    }
 `
 
 export const InfoCard = styled.div`
@@ -83,10 +100,18 @@ export const InfoCard = styled.div`
         gap: 1vw;
         justify-content: center;
     }
+
+    
+    @media screen and (max-width: 380px) {
+        width: 50vw;
+    }
 `
 
 export const Dote = styled.img`
     width: 1.82vw;
+    @media screen and (max-width: 380px) {
+        width: 4vw;
+    }
 `
 
 
@@ -98,5 +123,9 @@ export const HeroImg = styled.img`
 
     @media screen and (max-width: 576px) {
         width: 70vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
     }
 `

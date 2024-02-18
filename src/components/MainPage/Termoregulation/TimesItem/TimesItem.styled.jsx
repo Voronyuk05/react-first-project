@@ -22,9 +22,10 @@ export const Item = styled.li`
     }
 
     @media screen and (max-width: 576px) {
-        width: 90vw;
-        height: 30vw;
+        width: 95vw;
+        height: 33vw;
     }
+
 `
 
 export const Text = styled.div`
@@ -43,6 +44,11 @@ export const Text = styled.div`
         max-width: 50vw;
         gap: 1vw;
     }
+    @media screen and (max-width: 380px) {
+        max-width: 100vw;
+        gap: 1vw;
+        margin-left: 4vw;
+    }
 `
 
 export const Info = styled.div`
@@ -60,6 +66,10 @@ export const EclipseImg = styled.img`
 
     @media screen and (max-width: 576px) {
         width: 15vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        display: none;
     }
 `
 
@@ -83,5 +93,9 @@ export const Degrees = styled.span`
 
     @media screen and (max-width: 576px) {
         font-size: 4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        display: none;
     }
 `

@@ -41,6 +41,12 @@ export const Card = styled.div`
         width: 60vw;
         padding: 3.5vw 0px 2vw 2vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 50vw;
+        width: 90vw;
+        padding: 3.5vw 0px 2vw 2vw;
+    }
 `
 
 export const Text = styled.div`
@@ -54,6 +60,7 @@ export const Text = styled.div`
     @media screen and (max-width: 576px) {
         gap: 2vw;
     }
+
 `
 
 export const CardImg = styled.img`
@@ -66,5 +73,10 @@ export const CardImg = styled.img`
 
     @media screen and (max-width: 576px) {
         width: 24vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 36vw;
+        margin-left: 25%;
     }
 `

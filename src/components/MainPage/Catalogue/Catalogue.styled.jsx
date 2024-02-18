@@ -18,6 +18,10 @@ export const CatalougeComponent = styled.section`
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 200vw;
+    }
 `
 export const CatalogueContainer = styled.div`
     width: 95%;
@@ -40,6 +44,7 @@ export const CatalogueContainer = styled.div`
         background-position: 0vw 50vw;
         gap: 14vw;
     }
+
 `
 
 export const CatalogueText = styled.div`
@@ -73,5 +78,9 @@ export const CatalogueImg = styled.img`
 
     @media screen and (max-width: 576px) {
         width: 90vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 100vw;
     }
 `

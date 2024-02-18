@@ -36,7 +36,7 @@ export function Gifts() {
                                 <Paragraph color="#443C49">
                                     Монтаж 1 -3 дня в зависимости от площади помещения. Монтаж можно произвести в стяжку или сухим способом в специальную плиту.
                                 </Paragraph>
-                                <OrangeButton>Скидка на монтаж</OrangeButton>
+                                <HugeOrangeButton>Скидка на монтаж</HugeOrangeButton>
                             </BackGift>
                         </GiftCard>
                         <GiftCard onClick={() => handleTransformChange(2)} number={2} choosed={choosed}>

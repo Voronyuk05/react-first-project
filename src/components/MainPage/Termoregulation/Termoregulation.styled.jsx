@@ -14,12 +14,19 @@ export const TermoregulationComponent = styled.section`
     @media screen and (max-width: 576px) {
         height: 230vw;
     }
+    @media screen and (max-width: 380px) {
+        height: 320vw;
+    }
 `
 
 export const Title = styled.div`
     width: 41.5vw;
     @media screen and (max-width: 992px) {
         width: 80vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
     }
 `
 
@@ -37,6 +44,10 @@ export const Security = styled.div`
         width: 90vw;
         flex-direction: column;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 95vw;
+    }
 `
 export const DocumentImg = styled.img`
     width: 11vw;
@@ -46,6 +57,10 @@ export const DocumentImg = styled.img`
 
     @media screen and (max-width: 576px) {
         width: 40vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 60vw;
     }
 `
 

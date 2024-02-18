@@ -40,6 +40,21 @@ export const Item = styled.li`
             font-size: 3.5vw;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
+        height: 200vw;
+        gap: 5vw;
+        h4 {
+            font-size: 8vw;
+        }
+        a {
+            font-size: 7vw;
+        }
+        p {
+            font-size: 5vw;
+        }
+    }
 `
 
 export const Features = styled.div`
@@ -73,5 +88,12 @@ export const FeatureItem = styled.div`
 
     @media screen and (max-width: 576px) {
         width: 15.2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 30vw;
+        h3 {
+            font-size: 8vw;
+        }
     }
 `

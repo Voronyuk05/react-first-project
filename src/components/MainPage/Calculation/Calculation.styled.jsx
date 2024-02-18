@@ -11,6 +11,14 @@ export const CalculationComponent = styled.section`
     @media screen and (max-width: 992px) {
         height: 140vw;
     }
+
+    @media screen and (max-width: 576px) {
+        height: 170vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 280vw;
+    }
 `
 
 export const CalculationContainer = styled.div`
@@ -27,5 +35,15 @@ export const CalculationContainer = styled.div`
         width: 70vw;
         height: 110vw;
         flex-direction: column;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 160vw;
+        width: 95vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 270vw;
+        width: 95vw;
     }
 `

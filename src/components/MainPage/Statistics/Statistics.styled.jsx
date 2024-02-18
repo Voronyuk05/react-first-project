@@ -17,4 +17,8 @@ export const StatisticsComponent = styled.section`
     @media screen and (max-width: 576px) {
         height: 180vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 350vw;
+    }
 `

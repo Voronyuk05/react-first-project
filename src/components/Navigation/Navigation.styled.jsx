@@ -33,4 +33,8 @@ export const Nav = styled.nav`
     @media screen and (max-width: 576px) {
         width: 50vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 100vw;
+    }
 `

@@ -18,6 +18,11 @@ export const RigthBarComponent = styled.div`
         gap: 3vw;
         border-radius: 0px 0px 10px 10px;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 40%;
+        gap: 5vw;
+    }
 `
 
 export const Chatacter = styled.img`
@@ -26,6 +31,14 @@ export const Chatacter = styled.img`
     top: 2.3vw;
     @media screen and (max-width: 992px) {
         width: 30vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 70vw;
     }
 `
 
@@ -44,6 +57,14 @@ export const Path = styled.div`
         height: 8vw;
         border-radius: 0px 0px 10px 10px;
     }
+    @media screen and (max-width: 576px) {
+        height: 12vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 16vw;
+    }
+
 `
 
 export const Text = styled.div`
@@ -69,6 +90,30 @@ export const Text = styled.div`
             font-size: 2.5vw;
         }
     }
+
+    @media screen and (max-width: 576px) {
+        width: 60vw;
+        height: 24vw;
+        justify-content: flex-start;
+        ${H4Huge} {
+            font-size: 4vw;
+        }
+        h5 {
+            font-size: 2.7vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
+        height: 34vw;
+        justify-content: flex-start;
+        ${H4Huge} {
+            font-size: 6vw;
+        }
+        h5 {
+            font-size: 4vw;
+        }
+    }
 `
 
 export const Brackets = styled.img`
@@ -82,5 +127,17 @@ export const Brackets = styled.img`
         left: 30vw;
         width: 7vw;
         height: 5.4vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 10vw;
+        height: 7vw;
+        left: 45vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 15vw;
+        height: 11vw;
+        left: 70vw;
     }
 `

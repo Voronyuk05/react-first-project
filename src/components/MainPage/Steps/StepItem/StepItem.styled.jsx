@@ -31,6 +31,20 @@ export const Item = styled.li`
             font-size: 3.5vw;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        padding: 3vw 8vw 0vw 8vw;
+        width: 90vw;
+        height: 90vw;
+        padding: 5vw 2vw 0vw 2vw;
+        gap: 3vw;
+        h3 {
+            font-size: 7vw;
+        }
+        h4 {
+            font-size: 5vw;
+        }
+    }
 `
 
 export const ItemImg = styled.img`
@@ -44,5 +58,10 @@ export const ItemImg = styled.img`
     @media screen and (max-width: 576px) {
         width: 17vw;
         margin-bottom: 3vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 25vw;
+        margin-bottom: 5vw;
     }
 `

@@ -29,7 +29,7 @@ export function Header({changePage}) {
                     <span></span>
                     </Burger>
                 </WrapperLogo>
-                <WrapperContacts>
+                <WrapperContacts checked={checked}>
                     <Contact>8 (800) 700-80-40</Contact>
                     <PrimaryButton>
                         Заказать звонок

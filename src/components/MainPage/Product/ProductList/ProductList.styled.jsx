@@ -13,4 +13,13 @@ export const List = styled.ul`
         gap: 2vw;
         flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 992px) {
+        width: 95vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        flex-direction: column;
+    }
+
 `

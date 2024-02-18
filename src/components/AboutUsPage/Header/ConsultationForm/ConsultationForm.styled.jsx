@@ -7,6 +7,20 @@ export const WrapperOptions = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    @media screen and (max-width: 992px) {
+        max-width: 50vw;
+        gap: 1.5vw;
+        input {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        max-width: 90vw;
+        gap: 4vw;
+        input {
+            width: 100%;
+        }
+    }
 `
 
 export const OptionButton = styled.button`
@@ -27,6 +41,18 @@ export const OptionButton = styled.button`
             `
         }
     }}
+
+    @media screen and (max-width: 992px) {
+        width: 70vw;
+        height: 4vw;
+        font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
+        height: 8vw;
+        font-size: 4.7vw;
+    }
 `
 
 export const ButtonBack = styled.button`
@@ -44,8 +70,24 @@ export const ButtonBack = styled.button`
     font-weight: 700;
     color: #443C49;
     font-family: Rubik;
+    margin-bottom: 0.5vw;
+    @media screen and (max-width: 992px) {
+        font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 6vw;
+        margin-bottom: 5vw;
+    }
 `
 
 export const Arrow = styled.img`
-    width: 0.98vw;
+    width: 1vw;
+    @media screen and (max-width: 992px) {
+        width: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 5vw;
+    }
 `

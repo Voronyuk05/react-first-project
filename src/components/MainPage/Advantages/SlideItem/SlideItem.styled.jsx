@@ -17,12 +17,16 @@ export const Slide = styled.div`
         height: 45vw;
     }
 
-    
+
     @media screen and (max-width: 576px) {
         flex-direction: column;
         width: 90vw;
         height: 140vw;
         padding: 1vw 2vw 6vw 1vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 200vw;
     }
 `
 
@@ -70,6 +74,7 @@ export const SlideList = styled.ul`
     @media screen and (max-width: 576px) {
         padding-left: 5vw;
     }
+    
 `
 
 export const ListItem = styled.li`
@@ -87,6 +92,12 @@ export const ListItem = styled.li`
     @media screen and (max-width: 576px) {
         &::marker {
             font-size: 3.4vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        &::marker {
+            font-size: 5vw;
         }
     }
 `

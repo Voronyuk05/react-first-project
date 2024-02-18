@@ -1,4 +1,4 @@
-import { StatisticTable } from "./BottomBar/StatisticTable/StatisticTable";
+import { StatisticTable } from "./StatisticTable/StatisticTable";
 import { DetailsComponent, Content, BuilderImg, StatisticInfo, StatisticTitle, StatisticText, Addition } from "./Details.styled";
 import { H2, FontDark, Paragraph, OrangeButton, H3 } from "components/Global.styled";
 import { BottomBar } from "./BottomBar/BottomBar";

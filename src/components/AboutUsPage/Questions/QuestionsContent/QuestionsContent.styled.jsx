@@ -1,3 +1,4 @@
+import { H2Small } from "components/Global.styled"
 import styled from "styled-components"
 
 export const QuestionsContentComponent = styled.div`
@@ -7,6 +8,13 @@ export const QuestionsContentComponent = styled.div`
     align-items: center;
     justify-content: center;
     gap: 5vw;
+    @media screen and (max-width: 992px) {
+        width: 70vw;
+    }
+    @media screen and (max-width: 576px) {
+        width: 90vw;
+    }
+    
 `
 
 export const ContentTitle = styled.div`
@@ -16,6 +24,23 @@ export const ContentTitle = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1.5vw;
+    @media screen and (max-width: 992px) {
+        h2 {
+            text-align: center;
+        }
+        ${H2Small} {
+            font-size: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        h2 {
+            font-size: 6vw;
+        }
+        ${H2Small} {
+            font-size: 4vw;
+        }
+    }
 `
 
 export const ContentText = styled.div`
@@ -25,6 +50,13 @@ export const ContentText = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1.5vw;
+    @media screen and (max-width: 576px) {
+        gap: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        gap: 4vw;
+    }
 `
 
 export const Contacts = styled.div`
@@ -33,6 +65,18 @@ export const Contacts = styled.div`
     justify-content: center;
     align-items: center;
     gap: 6.8vw;
+    @media screen and (max-width: 992px) {
+        gap: 13.8vw;
+    }
+
+
+    @media screen and (max-width: 576px) {
+        gap: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        gap: 4vw;
+    }
 `
 
 export const ContactLink = styled.a`
@@ -52,6 +96,25 @@ export const ContactLink = styled.a`
         background: #8963A7;
         text-decoration: underline;
     }
+
+    @media screen and (max-width: 992px) {
+        height: 5vw;
+        font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 7vw;
+        font-size: 4vw;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 10vw;
+    }
 `
 
 export const ContactButton = styled.button`
@@ -66,5 +129,23 @@ export const ContactButton = styled.button`
     color: white;
     &:hover {
         background: #8963A7;
+    }
+
+    @media screen and (max-width: 992px) {
+        height: 5vw;
+        font-size: 2.2vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 7vw;
+        font-size: 4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 10vw;
     }
 `

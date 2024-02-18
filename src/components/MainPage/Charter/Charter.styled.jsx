@@ -15,12 +15,19 @@ export const CharterComponent = styled.section`
     @media screen and (max-width: 576px) {
         height: 280vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 440vw;
+    }
 `
 
 export const Title = styled.div`
     width: 60vw;
     @media screen and (max-width: 576px) {
         width: 80vw;
+    }
+    @media screen and (max-width: 380px) {
+        width: 96vw;
     }
 `
 
@@ -48,5 +55,9 @@ export const SubTitle = styled.div`
     }
     @media screen and (max-width: 576px) {
         width: 90vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 98vw;
     }
 `

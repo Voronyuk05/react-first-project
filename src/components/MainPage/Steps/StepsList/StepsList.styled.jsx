@@ -14,7 +14,8 @@ export const List = styled.ul`
     }
 
     @media screen and (max-width: 576px) {
-        height: 450vw;
+        width: 90vw;
+        height: 550vw;
         align-items: center;
         justify-content: center;
     }

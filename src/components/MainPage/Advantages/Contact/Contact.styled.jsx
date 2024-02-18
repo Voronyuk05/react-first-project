@@ -22,6 +22,13 @@ export const ContactComponent = styled.div`
         flex-direction: column;
         gap: 10vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
+        height: 160vw;
+        flex-direction: column;
+        gap: 10vw;
+    }
 `
 
 
@@ -42,6 +49,10 @@ export const ContactForm = styled.form`
         gap: 4vw;
         align-items: center;
         justify-content: center;
+    }
+
+    @media screen and (max-width: 380px) {
+        gap: 6vw;
     }
 `
 
@@ -66,6 +77,11 @@ export const SearchBox = styled.div`
         width: 70vw;
         height:7vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 80vw;
+        height: 9vw;
+    }
 `
 export const SearchBoxIcon = styled.img`
     width: 1.1vw;
@@ -83,6 +99,11 @@ export const SearchBoxIcon = styled.img`
     @media screen and (max-width: 576px) {
         width: 4vw;
         height: 4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 6vw;
+        height: 6vw;
     }
 `
 
@@ -117,6 +138,10 @@ export const Agreements = styled.div`
         width: 30vw;
         gap: 2vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 80vw;
+    }
 `
 
 
@@ -127,6 +152,7 @@ export const Input = styled.input`
     border-radius: 35px;
     border: none;
     outline: none;
+    background-color: rgba(0,0,0,0);
     @media screen and (max-width: 992px) {
         font-size: 1.2vw;
     }
@@ -134,6 +160,10 @@ export const Input = styled.input`
     @media screen and (max-width: 576px) {
         font-size: 2.5vw;
         width: 80%;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
     }
 `
 

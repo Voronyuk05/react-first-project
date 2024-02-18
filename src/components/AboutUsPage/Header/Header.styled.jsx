@@ -9,6 +9,18 @@ export const HeaderComponent = styled.header`
     align-items: center;
     justify-content: center;
     background-color: #443C49 ;
+
+    @media screen and (max-width: 992px) {
+        height: 11vw;
+    }
+
+    @media screen and (max-width: 992px) {
+        height: 16vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 25vw;
+    }
 `
 
 
@@ -19,6 +31,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 17vw;
+    @media screen and (max-width: 992px) {
+        gap: 5vw;
+    }
 `
 
 export const WrapperLogo = styled.div`
@@ -31,7 +46,7 @@ export const WrapperLogo = styled.div`
 
 export const Button = styled.button`
     width: 14%;
-    height: calc((100vw * 0.13)/9);
+    height: 1.6vw;
     border-radius: 5px;
     border: none;
     background: var(--xl-pipe-hover-purple, #B190CB);
@@ -48,67 +63,43 @@ export const Button = styled.button`
         transition: 0.3s;
         background: var(--xl-pipe-light-purple, #8963A7);
     }
+
+    @media screen and (max-width: 992px) {
+        width: 24vw;
+        height: 2.6vw;
+        font-size: 1.65vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 45vw;
+        height: 5vw;
+        font-size: 2.4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 7vw;
+        font-size: 3.5vw;
+    }
 `
 
 export const LogoText = styled(Paragraph)`
     width: 60%;
-    font-size: calc(0.94vw);
+    font-size: 0.94vw;
     color: white;
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.6vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 2.4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        display: none;
+    }
 `
 
 export const LogoComponent = styled.img`
-width: calc(10vw);
-`
-
-
-///Modal
-
-export const WrapperOptions = styled.div`
-    max-width: 33vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
-`
-
-export const OptionButton = styled.button`
-    width: ${({width}) => {return width ? width : '11vw'}};
-    height: ${({height}) => {return height ? height : '3.2vw'}};
-    box-sizing: border-box;
-    border-radius: 0.5vw;
-    border: solid 0.2vw #8963A7;
-    font-size: 1.25vw;
-    font-weight: 400;
-    font-family: Rubik;
-    background: rgba(0,0,0,0);
-    ${({value, option}) => {
-        if (value === option) { 
-            return `
-                background: #8963A7;
-                color: white;
-            `
-        }
-    }}
-`
-
-export const ButtonBack = styled.button`
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-    position: absolute;
-    bottom: 1vw;
-    left: 1vw;
-    width: 6vw;
-    height: 1.8vw;
-    background: rgba(0,0,0,0);
-    border: none;
-    font-size: 1.25vw;
-    font-weight: 700;
-    color: #443C49;
-    font-family: Rubik;
-`
-
-export const Arrow = styled.img`
-    width: 0.98vw;
+    width: calc(10vw);
 `

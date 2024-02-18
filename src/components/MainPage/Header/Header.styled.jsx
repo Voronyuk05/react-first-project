@@ -16,6 +16,10 @@ export const HeaderComponent = styled.header`
     @media screen and (max-width: 576px) {
         height: 14vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 20vw;
+    }
 `
 
 
@@ -25,6 +29,10 @@ export const WrapperLogo = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 2vw;
+    @media screen and (max-width: 380px) {
+        width: 100%;
+        justify-content: space-between;
+    }
 `
 
 
@@ -43,6 +51,37 @@ export const WrapperContacts = styled.div`
     align-items: center;
     justify-content: center;
     gap: 5px;
+    @media screen and (max-width: 380px) {
+        transform: translateX(-150%);
+        transition: all 0.3s ease 0s;
+        z-index: 9;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+        top: 550px;
+        left: 0;
+        gap: 3vw;
+        ${({checked}) => {
+            if (checked) {
+                return `
+                transition: all 0.3s ease 0s;
+                    transform: translateX(0%);
+                `
+            }
+        }}
+        h4 {
+            font-size: 6vw;
+        }
+        button {
+            font-size: 6vw;
+            background-color: white;
+            color: #443C49;
+            padding: 4vw;
+        }
+    }
 `
 
 export const Contact = styled.h4`
@@ -129,5 +168,10 @@ export const Burger = styled.div`
     @media screen and (max-width: 576px) {
         width: 10vw;
 		height: 6vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 15vw;
+        height: 9vw;
     }
 `

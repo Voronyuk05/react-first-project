@@ -6,6 +6,20 @@ export const СomparisonComponent = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 992px) {
+        height: 300vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        align-items: flex-start;
+        height: 480vw;
+        padding-top: 7vw;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 1150vw;
+    }
 `
 
 export const СomparisonContainer = styled.div`
@@ -23,6 +37,11 @@ export const Title = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 1220px;
+    @media screen and (max-width: 992px) {
+        width: 90vw;
+    }
+
+    
 `
 
 export const Slides = styled.div`

@@ -14,6 +14,10 @@ export const TopBarComponent = styled.section`
     @media screen and (max-width: 576px) {
         height: 7vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 12vw;
+    }
 `
 
 export const WrapperLocation = styled.div`
@@ -25,6 +29,10 @@ export const WrapperLocation = styled.div`
     @media screen and (max-width: 992px) {
         gap: 2vw;
         width: 60%;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 100%;
     }
 `
 export const Location = styled.span`
@@ -49,6 +57,10 @@ export const Location = styled.span`
 
     @media screen and (max-width: 576px) {
         font-size: 2.4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 3vw;
     }
 `
 

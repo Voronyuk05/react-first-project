@@ -1,10 +1,11 @@
 import { advantagesData } from "./AdvantagesData";
 import { AdvantagesComponent, AdvantagesContainer, AdvantagesTitle, LogoImg, TitleText, AdvantagesContent, HouseImg, AdvantagesList, ItemList } from "./Advantages.styled";
-import { H3Huge, ItemTitle, FontPrimary, FontDark } from "components/Global.styled";
+import { H3Huge, ItemTitle, FontPrimary } from "components/Global.styled";
 import LogoSvg from '../../../images/Logo.svg'
-import systemHouseIcon from '../../../images/system-house.png'
+
 
 export function Advantages() {
+
     return (
         <AdvantagesComponent>
             <AdvantagesContainer>
@@ -15,7 +16,7 @@ export function Advantages() {
                     </TitleText>
                 </AdvantagesTitle>
                 <AdvantagesContent>
-                    <HouseImg src={systemHouseIcon} />
+                    <HouseImg />
                     <AdvantagesList>
                         {advantagesData.map(({title, text}) => (
                             <ItemList>

@@ -18,4 +18,11 @@ export const StepsComponent = styled.section`
             justify-content: center;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        height: 610vw;
+        h2 {
+            text-align: center;
+        }
+    }
 `

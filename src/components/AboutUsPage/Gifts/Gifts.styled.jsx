@@ -8,6 +8,17 @@ export const GiftsComponent = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 992px) {
+        height: 90vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 270vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 300vw;
+    }
 `
 
 export const GiftsContainer = styled.div`
@@ -17,10 +28,23 @@ export const GiftsContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 3vw;
+    @media screen and (max-width: 576px) {
+        gap: 6vw;
+    }
 `
 
 export const GiftsTitle = styled.div`
     width: 30vw;
+    @media screen and (max-width: 992px) {
+        width: 60vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 90vw;
+        h2 {
+            font-size: 7vw;
+        }
+    }
 `
 
 export const WrapperGifts = styled.div`
@@ -29,14 +53,17 @@ export const WrapperGifts = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10vw;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
 `
 
 
 export const FrontGift = styled.div`
     position: absolute;
     backface-visibility: hidden;
-    width: 22.4vw;
-    height: 30.2vw;
+    width: inherit;
+    height:inherit;
     background-image: url(${giftIcon});
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,11 +78,17 @@ export const FrontGift = styled.div`
         transition: 0.3s;
         transform: scale(1.05);
     }
+
 `
 
 export const FrontGiftTitle = styled.div`
     width: 100%;
     margin-top: 1vw;
+    @media screen and (max-width: 576px) {
+        h2 {
+            font-size: 7vw;
+        }
+    }
 `
 
 export const Sign = styled.img`
@@ -64,6 +97,19 @@ export const Sign = styled.img`
     right: 1vw;
     width: 2vw;
     height: 2vw;
+    @media screen and (max-width: 992px) {
+        width: 3vw;
+        height: 3vw;
+        top: 2vw;
+        right: 2vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 6vw;
+        height: 6vw;
+        top: 4vw;
+        right: 4vw;
+    }
 `
 
 export const BackGift = styled.div`
@@ -75,12 +121,30 @@ export const BackGift = styled.div`
     border-radius: 1.875vw;
     padding: 1.5vw 2.1vw 1vw 2.1vw;
     position: absolute;
-    width: 22.4vw;
-    height: 30.2vw;
+    width: inherit;
+    height:  inherit;
     transform: rotateY(180deg) ;
     background-color: #EDEDED;
     transition: 0.6s;
     box-sizing: border-box;
+    @media screen and (max-width: 992px) {
+        p {
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        padding-bottom: 3vw;
+        h2 {
+            font-size: 7vw;
+        }
+        p {
+            font-size: 4vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        padding: 3vw 5vw 3vw 5vw;
+    }
 `
 
 export const BackGiftImg = styled.div`
@@ -90,14 +154,39 @@ export const BackGiftImg = styled.div`
 
 export const DiscountImg = styled.img`
     width: 12vw;
+    @media screen and (max-width: 992px) {
+        width: 20vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 40vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 50vw;
+    }
 `
 
 export const GadjetImg = styled.img`
     width: 5.2vw;
+    @media screen and (max-width: 992px) {
+        width: 8vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 16vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 20vw;
+    }
 `
 
 export const BackGiftParagraph = styled.div`
     width: 90%;
+    @media screen and (max-width: 576px) {
+        width: 95%;
+    }
 `
 
 export const GiftCard = styled.div`
@@ -132,4 +221,22 @@ export const GiftCard = styled.div`
             `
         }
     }}
+
+    @media screen and (max-width: 992px) {
+        width: 40vw;
+        height: 53.9vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 80vw;
+        height: 108vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 90vw;
+        height: 120vw;
+        button {
+            font-size: 3vw;
+        }
+    }
 `

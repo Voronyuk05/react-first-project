@@ -27,4 +27,5 @@ export const  ObjectsContainer = styled.div`
     @media screen and (max-width: 992px) {
         text-align: center;
     }
+
 `

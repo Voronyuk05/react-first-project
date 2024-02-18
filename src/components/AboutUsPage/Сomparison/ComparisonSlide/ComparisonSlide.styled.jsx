@@ -11,4 +11,21 @@ export const ComparisonSlideComponent = styled.div`
     gap: 3.5vw;
     box-sizing: border-box;
     padding: 5.72vw 0vw 5.72vw 0vw;
+    @media screen and (max-width: 992px) {
+        height: 82vw;
+        gap: 7vw;
+        padding: 10vw 0vw 10vw 0vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 135vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        min-height: 340vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15vw;
+    }
 `

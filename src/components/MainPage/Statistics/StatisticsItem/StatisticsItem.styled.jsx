@@ -20,8 +20,11 @@ export const Item = styled.li`
 
     @media screen and (max-width: 576px) {
         width: 40vw;
-        height: 30;
         margin-top: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 80vw;
     }
 `
 
@@ -38,7 +41,16 @@ export const Text = styled.div`
         height: 26vw;
         margin-top: 4vw;
     }
+    @media screen and (max-width: 380px) {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding-left: 10vw;
+        box-sizing: border-box;
+    }
 `
+
 
 export const EclipseImg = styled.img`
     top: 0;

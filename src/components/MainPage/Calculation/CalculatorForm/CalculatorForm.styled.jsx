@@ -1,3 +1,4 @@
+import { H3Small, ItemTitle } from "components/Global.styled";
 import styled from "styled-components";
 
 export const Content = styled.div`
@@ -12,6 +13,18 @@ export const Content = styled.div`
         width: 100%;
         gap: 6vw;
     }
+
+    @media screen and (max-width: 576px) {
+        padding: 4vw 0vw 4vw 0vw;
+        box-sizing: border-box;
+        gap: 14vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 60%;
+        gap: 15vw;
+    }
+
 `
 
 export const CalculationNav = styled.div`
@@ -26,6 +39,11 @@ export const CalculationNav = styled.div`
         width: 50vw;
         height: 15vw;
         gap: 3vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 80vw;
+        height: 20vw;
     }
 `
 
@@ -42,6 +60,16 @@ export const Way = styled.div`
         width: 45vw;
         height: 1vw;
     }
+
+    @media screen and (max-width: 576px) {
+        width: 60vw;
+        height: 1.5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 70vw;
+        height: 2.5vw;
+    }
 `
 
 export const Completed = styled.div`
@@ -52,6 +80,13 @@ export const Completed = styled.div`
     background-color: #8963A7;
     @media screen and (max-width: 992px) {
         height: 1vw;
+    }
+    @media screen and (max-width: 576px) {
+        height: 1.5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 2.5vw;
     }
 `
 
@@ -75,6 +110,14 @@ export const StepsForm = styled.form`
         align-items: flex-start;
         padding-left: 5vw;
     }
+
+    @media screen and (max-width: 576px) {
+        gap: 6vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 60vw;
+    }
 `
 
 export const LabelObjects = styled.label`
@@ -89,6 +132,26 @@ export const LabelObjects = styled.label`
         flex-wrap: wrap;
         max-width: 80%;
     }
+
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+        gap: 2vw;
+        ${ItemTitle} {
+            font-size: 4vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        max-width: 100%;
+        gap: 2vw;
+        ${ItemTitle} {
+            font-size: 6vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        gap: 3vw;
+    }
 `
 
 export const WrapperInputs = styled.div`
@@ -101,6 +164,10 @@ export const WrapperInputs = styled.div`
         flex-wrap: wrap;
         gap: 1.5vw;
     }
+
+    @media screen and (max-width: 576px) {
+        gap: 2.5vw;
+    }
 `
 
 export const WrapperObject = styled.div`
@@ -111,6 +178,16 @@ export const WrapperObject = styled.div`
     gap: 0.3vw;
     @media screen and (max-width: 992px) {
         gap: 0.6vw;
+        ${H3Small} {
+            font-size: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        gap: 1vw;
+        ${H3Small} {
+            font-size: 5vw;
+        }
     }
 `
 
@@ -124,5 +201,17 @@ export const InputMeters = styled.input`
         width: 6vw;
         height: 2vw;
         font-size: 1.7vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 9vw;
+        height: 3vw;
+        font-size: 2.2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 14vw;
+        height: 5vw;
+        font-size: 4vw;
     }
 `

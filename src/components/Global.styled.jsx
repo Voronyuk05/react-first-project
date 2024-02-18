@@ -17,6 +17,10 @@ export const Paragraph = styled.p`
     @media screen and (max-width: 576px) {
         font-size: 2.8vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
+    }
 `
 
 export const ParagraphDark = styled(Paragraph)`
@@ -33,6 +37,10 @@ export const ParagraphTiny = styled(Paragraph)`
 
     @media screen and (max-width: 576px) {
         font-size: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
     }
 `
 
@@ -51,6 +59,10 @@ export const ParagraphHuge = styled.p`
 
     @media screen and (max-width: 576px) {
         font-size: 3vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 5vw;
     }
 `
 
@@ -72,6 +84,10 @@ export const Link = styled.a`
 
     @media screen and (max-width: 576px) {
         font-size: 4vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 8vw;
     }
 `
 export const LinkSecondary = styled.a`
@@ -112,6 +128,12 @@ export const LinkUnderline = styled(Link)`
         height: 0.4vw;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        &::before {
+        height: 0.6vw;
+        }
+    }
 `
 
 export const PrimaryButton = styled.button`
@@ -144,12 +166,21 @@ export const PrimaryButton = styled.button`
         font-size: 3vw;
         padding: 1vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
+        padding: 2vw;
+    }
 `
 
 export const PrimaryButtonP = styled(PrimaryButton)`
     padding: 0.4% 3% 0.4% 3%;
     @media screen and (max-width: 576px) {
         padding: 2% 6% 2% 6%;
+    }
+
+    @media screen and (max-width: 380px) {
+        padding: 3% 9% 3% 9%;
     }
 `
 
@@ -175,6 +206,16 @@ export const GrayDarkButton = styled.a`
         background: #636676;
         color: #9599B3;
     }
+
+    @media screen and (max-width: 992px) {
+        font-size: 2vw;
+        height: 4vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 8vw;
+        font-size: 4vw;
+    }
 `
 
 export const WhiteButton = styled(PrimaryButton)`
@@ -191,6 +232,11 @@ export const WhiteButton = styled(PrimaryButton)`
         font-size: 4vw;
         padding: 1vw 3vw 1vw 3vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 6vw;
+        padding: 2vw 6vw 2vw 6vw;
+    }
 `
 
 export const OrangeButton = styled(PrimaryButton)`
@@ -198,18 +244,45 @@ export const OrangeButton = styled(PrimaryButton)`
     color: black;
     font-size: 0.8vw;
     padding: 0.6% 5% 0.4% 6%;
-    max-width: 12vw;
+
     text-align: center;
     &:active {
         transition: 0.1s ;
         background: rgba(0, 0, 0, 0);
         color: white;
     }
+    @media screen and (max-width: 992px) {
+        font-size: 1.6vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 2.5vw;
+        padding: 2% 8% 2% 8%;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
+        padding: 4% 16% 4% 16%;
+    }
 `
 
 export const HugeOrangeButton = styled(OrangeButton)`
     font-size: 0.73vw;
     max-width: 20vw;
+    @media screen and (max-width: 992px) {
+        font-size: 1.6vw;
+        max-width: 40vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 2.8vw;
+        padding: 2% 8% 2% 8%;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
+    }
 `
 
 export const SecondaryButton = styled(PrimaryButton)`
@@ -233,6 +306,16 @@ export const SecondaryButton = styled(PrimaryButton)`
         font-size: 3vw;
         padding: 0.5% 2% 0.5% 2%;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 5vw;
+        padding: 1% 4% 1% 4%;
+        width: 80vw;
+        text-align: center;
+        height: 6vw;
+        display: flex;
+        justify-content: center;
+    }
 `
 
 export const LightButton = styled.button`
@@ -253,6 +336,24 @@ export const LightButton = styled.button`
     &:hover {
         transition: 0.3s;
         background: var(--xl-pipe-light-purple, #8963A7);
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 2.5vw;
+        height: 5vw;
+        padding: 1vw 3vw 1vw 3vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 3.2vw;
+        height: 7vw;
+        padding: 2vw 5vw 2vw 5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 5vw;
+        height: 10vw;
+        padding: 2vw 5vw 2vw 5vw;
     }
 `
 
@@ -314,6 +415,9 @@ export const H1 = styled.h1`
     @media screen and (max-width: 576px) {
         font-size: 5vw;
     }
+    @media screen and (max-width: 380px) {
+        font-size: 7vw;
+    }
 `
 
 
@@ -333,6 +437,10 @@ export const H2 = styled.h2`
 
     @media screen and (max-width: 576px) {
         font-size: 4.7vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 7vw;
     }
 `
 
@@ -365,6 +473,10 @@ export const H3 = styled.h3`
     @media screen and (max-width: 576px) {
         font-size: 4vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 6vw;
+    }
 `
 
 export const H3Huge = styled(H3)`
@@ -375,6 +487,10 @@ export const H3Huge = styled(H3)`
 
     @media screen and (max-width: 576px) {
         font-size: 4.3vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 6.5vw;
     }
 `
 
@@ -388,6 +504,10 @@ export const ItemTitle = styled(H3)`
     @media screen and (max-width: 576px) {
         font-size: 3vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 5vw;
+    }
 `
 
 export const H3Small = styled(H3)`
@@ -399,6 +519,10 @@ export const H3Small = styled(H3)`
     @media screen and (max-width: 576px) {
         font-size: 3.8vw;
         text-align: center;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 5.5vw;
     }
 `
 
@@ -420,6 +544,10 @@ export const H4 = styled.h4`
     @media screen and (max-width: 576px) {
         font-size: 2.5vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 3.5vw;
+    }
 `
 export const H4Huge = styled(H4)`
     font-size: 1.1vw;
@@ -430,6 +558,12 @@ export const H4Huge = styled(H4)`
     @media screen and (max-width: 576px) {
         font-size: 3vw;
     }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
+    }
+
+    
 `
 
 
@@ -447,6 +581,10 @@ export const H5 = styled.h5`
 
     @media screen and (max-width: 576px) {
         font-size: 2vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 4vw;
     }
 `
 
@@ -511,6 +649,13 @@ export const Checkbox = styled.input`
             height: 2.8vw;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        &::before {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
 `
 
 export const RadioObjects = styled.input`
@@ -538,16 +683,26 @@ export const RadioObjects = styled.input`
         transition: 0.2s;
         background: #7B5896;
     }
+    
     @media screen and (max-width: 992px) {
         &::before {
-        content: "";
-        width: 6vw;
-        height: 6vw;
-        transform: scale(0.7);
-        background-image: url(${({bg}) => bg.default});
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+            width: 6vw;
+            height: 6vw;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        &::before {
+            width: 9vw;
+            height: 9vw;
+        }
+    }
+
+    
+    @media screen and (max-width: 380px) {
+        &::before {
+            width: 14vw;
+            height: 14vw;
         }
     }
 `
@@ -581,6 +736,20 @@ export const Radio = styled.input`
             height: 1.8vw;
         }
     }
+
+    @media screen and (max-width: 576px) {
+        &::before {
+            width: 2.8vw;
+            height: 2.8vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        &::before {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
 `
 
 export const InputRange = styled.input`
@@ -608,6 +777,26 @@ export const InputRange = styled.input`
             height: 1.2vw;
         }
     }
+
+    @media screen and (max-width: 576px) {
+        width: 50vw;
+        height: 1px;
+        &::-webkit-slider-thumb {
+            width: 1.8vw;
+            height: 1.8vw;
+            outline-offset: 0.435vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 60vw;
+        height: 1px;
+        &::-webkit-slider-thumb {
+            width: 2.5vw;
+            height: 2.5vw;
+            outline-offset: 0.635vw;
+        }
+    }
 `
 
 export const Line = styled.img`
@@ -615,12 +804,20 @@ export const Line = styled.img`
     @media screen and (max-width: 992px) {
         width: 3.6vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 8vw;
+    }
 `
 
 export const MediaIcon = styled.img`
     width: 1.82vw;
     @media screen and (max-width: 576px) {
         width: 3vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 6vw;
     }
 `
 
@@ -632,6 +829,14 @@ export const Tag = styled.h3`
     margin: 0px;
     @media screen and (max-width: 992px) {
         font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 3.5vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 7vw;
     }
 `
 
@@ -648,4 +853,8 @@ export const HideButton = styled.button`
     top: 1vw;
     right: 1vw;
     background-color: white;
+    @media screen and (max-width: 576px) {
+        width: 2.758vw;
+        height: 2.760vw;
+    }
 `

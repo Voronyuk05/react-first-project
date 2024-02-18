@@ -10,6 +10,10 @@ export const SlidesComponent = styled.div`
     @media screen and (max-width: 992px) {
         width: 90vw;
     }
+
+    @media screen and (max-width: 380px) {
+        height: 260vw;
+    }
 `
 
 export const SlidesCategory = styled.div`
@@ -19,4 +23,9 @@ export const SlidesCategory = styled.div`
     align-items: center;
     justify-content: center;
     gap: 0.8vw;
+
+    @media screen and (max-width: 380px) {
+        flex-direction: column;
+        gap: 2vw;
+    }
 `

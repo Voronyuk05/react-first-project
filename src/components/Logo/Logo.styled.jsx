@@ -9,4 +9,8 @@ export const LogoComponent = styled.img`
     @media screen and (max-width: 576px) {
         width: 28vw;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 40vw;
+    }
 `

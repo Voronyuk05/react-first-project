@@ -10,6 +10,14 @@ export const FooterComponent = styled.footer`
     @media screen and (max-width: 992px) {
         height: 24vw;
     }
+
+    @media screen and (max-width: 576px) {
+        height: 40vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 60vw;
+    }
 `
 
 
@@ -24,12 +32,27 @@ export const FooterContainer = styled.div`
     @media screen and (max-width: 992px) {
         gap: 10vw;
     }
+
+    @media screen and (max-width: 576px) {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vw;
+    }
 `
 
 export const FooterLogo = styled.img`
     width: 10.4vw;
     @media screen and (max-width: 992px) {
         width: 20vw;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 30vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        width: 50vw;
     }
 `
 
@@ -41,5 +64,21 @@ export const Rights = styled.div`
     justify-content: center;
     @media screen and (max-width: 992px) {
         width: 30vw;
+    }
+
+
+    @media screen and (max-width: 576px) {
+        width: 70vw;
+        display: flex;
+        align-items: flex-start;
+        h4 {
+            font-size: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        h4 {
+            font-size: 4vw;
+        }
     }
 `
